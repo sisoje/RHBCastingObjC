@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RHBCastingObjC_Tests' do
+  pod 'RHBCastingObjC', :path => '../'
+  
+  
+end
