@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBCastingObjC'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Safe casting category.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Red Hot Bits safe casting category.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'NSObject+RHBCasting.m'
+  s.source_files = {'NSObject+RHBCasting.h', 'NSObject+RHBCasting.m'}
   s.public_header_files = 'NSObject+RHBCasting.h'
 
   # s.frameworks = 'UIKit', 'MapKit'
