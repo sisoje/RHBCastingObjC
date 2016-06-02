@@ -30,8 +30,8 @@ Red Hot Bits safe casting category.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '*.h,*.m'
-  s.public_header_files = '*.h'
+  s.source_files = 'NSObject+RHBCasting.m'
+  s.public_header_files = 'NSObject+RHBCasting.h'
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
