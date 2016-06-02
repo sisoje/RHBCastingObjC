@@ -30,7 +30,7 @@ Red Hot Bits safe casting category.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '*.m'
+  s.source_files = '*.h,*.m'
   s.public_header_files = '*.h'
 
   # s.frameworks = 'UIKit', 'MapKit'
