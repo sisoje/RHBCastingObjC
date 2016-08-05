@@ -5,6 +5,38 @@
 [![License](https://img.shields.io/cocoapods/l/RHBCastingObjC.svg?style=flat)](http://cocoapods.org/pods/RHBCastingObjC)
 [![Platform](https://img.shields.io/cocoapods/p/RHBCastingObjC.svg?style=flat)](http://cocoapods.org/pods/RHBCastingObjC)
 
+## Usage
+
+### Example1
+
+So, instead of doing it standard way, like:
+
+	if ([self.collection isKindOfClass:[NSArray class]]) {
+		NSArray *array = (NSArray *)self.collection;
+		/// ... some other code
+            
+This pod enables you to do the following:
+
+	NSArray *array = [NSArray rhb_dynamicCast:self.collection];
+	if (array) {
+		/// ... some other code
+
+Note that ```self.collection``` is actually duplicated code in the standard approach, and it may have performance impacts if its created on the fly.
+
+Method ```rhb_dynamicCast:``` uses ```isKindOfClass:``` internally. There is another method named ```rhb_strictDynamicCast:``` that uses ```isMemberOfClass:``` internally.
+
+### Example2
+
+To make extra security checks during development (asserts) then one should use the following:
+	
+	NSArray *array = [NSArray rhb_verifyCast:self.collection];
+
+instead of standard way:
+
+	NSArray *array = (NSArray *)self.collection;
+	
+First way will do the assertion and check if the cast is valid in debug mode to prevent errors during development. Both ways will have the same effect in release mode.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
