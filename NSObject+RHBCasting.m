@@ -5,7 +5,7 @@
 
 + (instancetype)rhb_verifyCast:(id)object {
     
-    NSAssert(!object || [self dynamicCast:object], @"wrong cast");
+    NSAssert(!object || [self rhb_dynamicCast:object], @"wrong cast");
     
     return object;
 }
