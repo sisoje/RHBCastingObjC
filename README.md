@@ -7,6 +7,8 @@
 
 ## Usage
 
+This mini library will make your code safer and more readable when you deal with casting. This kind of library is not needed for Swift, because Swift will force you to write safe and readable casting code out of the box.
+
 ### Example1
 
 So, instead of doing it standard way, like:
@@ -36,12 +38,6 @@ instead of standard way:
 	NSArray *array = (NSArray *)self.collection;
 	
 First way will do the assertion and check if the cast is valid in debug mode to prevent errors during development. Both ways will have the same effect in release mode.
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
