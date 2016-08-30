@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBCastingObjC'
-  s.version          = '0.1.5.3'
+  s.version          = '0.1.5.4'
   s.summary          = 'Safe casting category.'
 
 # This description is used to generate tags and improve search results.
@@ -25,10 +25,11 @@ Red Hot Bits safe casting category.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
-  s.source           = { :git => 'https://github.com/sisoje/RHBCastingObjC.git', :tag => '0.1.5.3' }
+  s.source           = { :git => 'https://github.com/sisoje/RHBCastingObjC.git', :tag => '0.1.5.4' }
   s.social_media_url = 'https://twitter.com/redhotbits'
 
   s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '2.0'  
 
   s.source_files = 'NSObject+RHBCasting.h', 'NSObject+RHBCasting.m'
   s.public_header_files = 'NSObject+RHBCasting.h'
